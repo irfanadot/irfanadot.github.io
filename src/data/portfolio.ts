@@ -48,7 +48,7 @@ const contact = {
   location: "Lahore, Pakistan",
 };
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://irfanadot.github.io/porfolio";
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://irfanadot.github.io";
 const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
 const withBasePath = (path: string) => `${basePath}${path}`;
 const absoluteUrl = (path: string) => `${siteUrl}${path}`;

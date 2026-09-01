@@ -36,8 +36,8 @@ jobs:
       - name: Build
         run: npm run build
         env:
-          NEXT_PUBLIC_BASE_PATH: /porfolio
-          NEXT_PUBLIC_SITE_URL: https://irfanadot.github.io/porfolio
+          NEXT_PUBLIC_BASE_PATH: ""
+          NEXT_PUBLIC_SITE_URL: https://irfanadot.github.io
 
       - name: Disable Jekyll
         run: touch out/.nojekyll
