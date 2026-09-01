@@ -1,6 +1,7 @@
 "use client";
 
 import { Menu, X } from "lucide-react";
+import Image from "next/image";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { portfolio } from "@/data/portfolio";
 
@@ -84,7 +85,16 @@ export function Header() {
     <header ref={headerRef} className={`site-header ${scrolled ? "is-scrolled" : ""}`}>
       <div className="header-inner">
         <a className="brand" href="#home" onClick={closeMenu} aria-label="Irfan Akram, back to top">
-          <span className="brand-mark" aria-hidden="true">IA</span>
+          <span className="brand-mark brand-avatar" aria-hidden="true">
+            <Image
+              src={portfolio.hero.portrait.src}
+              alt=""
+              width={40}
+              height={40}
+              sizes="40px"
+              priority
+            />
+          </span>
           <span className="brand-name">Irfan Akram</span>
         </a>
 
