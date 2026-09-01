@@ -467,7 +467,7 @@ export const portfolio = {
     { label: "Stack Overflow", href: contact.stackOverflow },
   ],
   assets: {
-    ogImage: absoluteUrl("/images/og-image.png"),
+    ogImage: absoluteUrl("/images/irfan-akram-portfolio-og.png"),
     favicon: withBasePath("/favicon.svg"),
     screenshotDirectory: withBasePath("/images/projects/"),
   },
