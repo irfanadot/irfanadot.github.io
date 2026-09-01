@@ -26,7 +26,7 @@ export default function Home() {
     "@type": "Person",
     name: portfolio.site.name,
     url: portfolio.site.domain,
-    image: `${portfolio.site.domain}${hero.portrait.src}`,
+    image: `${portfolio.site.domain}/images/irfan-profile.webp`,
     jobTitle: ["Technical Lead", "Lead Software Engineer"],
     description: portfolio.site.description,
     email: `mailto:${contact.email}`,

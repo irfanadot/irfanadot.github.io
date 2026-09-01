@@ -43,17 +43,20 @@ export type AlsoShipped = {
 const contact = {
   email: "irfanakram825@gmail.com",
   linkedIn: "https://www.linkedin.com/in/helloirfan",
-  github: "https://github.com/irfanakram825",
+  github: "https://github.com/irfanadot",
   stackOverflow: "https://stackoverflow.com/users/10032857/irfan-akram",
   location: "Lahore, Pakistan",
 };
 
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://irfanadot.github.io/porfolio";
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
+const withBasePath = (path: string) => `${basePath}${path}`;
+const absoluteUrl = (path: string) => `${siteUrl}${path}`;
+
 export const portfolio = {
   site: {
     name: "Irfan Akram",
-    // Configured deployment domain. See CONTENT-REVIEW.md before publishing:
-    // this host currently serves an unrelated site.
-    domain: "https://helloirfan.com",
+    domain: siteUrl,
     title: "Irfan Akram | Technical Lead & Lead Software Engineer",
     description:
       "Irfan Akram is a Technical Lead in Lahore with 7+ years in software architecture, backend and API systems, LLM integration and AI automation, and mobile delivery. Open to Gulf and remote roles.",
@@ -78,7 +81,7 @@ export const portfolio = {
       "Technical Lead with 7+ years across backend systems, software architecture, LLM integration, AI automation, and mobile engineering. I turn complex requirements into reliable systems, guide engineers through delivery, and stay hands-on in the code.",
     availability: "Open to relocation",
     portrait: {
-      src: "/images/irfan-profile.webp",
+      src: withBasePath("/images/irfan-profile.webp"),
       alt: "Portrait of Irfan Akram",
       objectPosition: "50% 20%",
       // Adjust objectPosition if a replacement portrait needs different framing.
@@ -449,7 +452,7 @@ export const portfolio = {
   },
   languages: ["English, professional working", "Urdu, native"],
   resume: {
-    path: "/Irfan-Akram-Resume.pdf",
+    path: withBasePath("/Irfan-Akram-Resume.pdf"),
     lastUpdated: "",
     // Set flags.resumeAvailable to true once a PDF matching the timeline above is in public/.
   },
@@ -464,9 +467,9 @@ export const portfolio = {
     { label: "Stack Overflow", href: contact.stackOverflow },
   ],
   assets: {
-    ogImage: "/images/og-image.png",
-    favicon: "/favicon.svg",
-    screenshotDirectory: "/images/projects/",
+    ogImage: absoluteUrl("/images/og-image.png"),
+    favicon: withBasePath("/favicon.svg"),
+    screenshotDirectory: withBasePath("/images/projects/"),
   },
 } as const;
 
