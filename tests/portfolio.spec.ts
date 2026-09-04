@@ -458,7 +458,8 @@ test("structured data describes the person accurately and privately", async ({ p
   expect(data.worksFor.name).toBe("Byteimpulse");
   expect(data.alumniOf.name).toContain("Government College University");
   expect(data.sameAs.length).toBeGreaterThanOrEqual(3);
-  // No private contact detail beyond the publicly displayed email.
+  // The phone number is shown in the contact section but deliberately kept out
+  // of the structured data, which is what aggregators and scrapers harvest.
   expect(raw).not.toContain("+92");
   expect(raw).not.toContain("telephone");
 });
