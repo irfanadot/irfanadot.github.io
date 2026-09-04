@@ -1,6 +1,6 @@
 "use client";
 
-import { ArrowUpRight, Check, Copy, Mail, MapPin } from "lucide-react";
+import { ArrowUpRight, Check, Copy, Mail, MapPin, Phone } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 import { portfolio } from "@/data/portfolio";
 
@@ -35,6 +35,9 @@ export function Contact() {
             <p className="contact-location">
               <MapPin size={17} aria-hidden="true" /> {contact.location}
             </p>
+            <p className="contact-location">
+              <Phone size={17} aria-hidden="true" /> {contact.phone}
+            </p>
           </div>
 
           <div className="contact-actions">
@@ -45,6 +48,9 @@ export function Contact() {
               {copied ? <Check size={18} aria-hidden="true" /> : <Copy size={18} aria-hidden="true" />}
               {copied ? "Copied" : "Copy Email"}
             </button>
+            <a className="button button-dark-glass" href={`tel:${contact.phone.replace(/\s+/g, "")}`}>
+              <Phone size={18} aria-hidden="true" /> Call Me
+            </a>
             <a className="button button-dark-glass" href={contact.linkedIn} target="_blank" rel="noopener noreferrer">
               LinkedIn <ArrowUpRight size={18} aria-hidden="true" />
             </a>
