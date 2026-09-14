@@ -179,6 +179,41 @@ export const portfolio = {
       accent: "slate",
     },
     {
+      slug: "eezly",
+      name: "eezly",
+      description:
+        "A grocery price comparison app used across Quebec, built on barcode lookup and multi-store list optimisation.",
+      productType: "Grocery price comparison app",
+      role: "Technical Lead, architecture and delivery",
+      impact: "More than 10,000 downloads across Quebec.",
+      overview:
+        "eezly compares grocery prices across Quebec supermarkets, so a shopping list can be built around what each store actually charges that week.",
+      responsibilities: [
+        "Lead architecture and delivery for the app alongside the other Byteimpulse platforms.",
+        "Own the backend and integration architecture behind barcode lookup and multi-store list optimisation.",
+      ],
+      approach: [
+        "Barcode lookup resolves a product to its listings across nearby stores.",
+        "List optimisation compares a full basket across stores rather than one item at a time.",
+      ],
+      technologies: ["Flutter", "Node.js"],
+      collaboration:
+        "Built with the Byteimpulse engineering team as one of the three platforms I lead.",
+      outcome: "The app has passed 10,000 downloads across Quebec.",
+      links: [
+        {
+          label: "Google Play",
+          href: "https://play.google.com/store/apps/details?id=com.eezly.groceryapp",
+        },
+        {
+          label: "App Store",
+          href: "https://apps.apple.com/ca/app/eezly-compare-grocery-prices/id6446444139",
+        },
+      ],
+      featured: true,
+      accent: "warm",
+    },
+    {
       slug: "srvqube",
       name: "SrvQube",
       description:
@@ -247,41 +282,6 @@ export const portfolio = {
       outcome: "The platform scaled to more than 100,000 users worldwide.",
       featured: true,
       accent: "ink",
-    },
-    {
-      slug: "eezly",
-      name: "eezly",
-      description:
-        "A grocery price comparison app used across Quebec, built on barcode lookup and multi-store list optimisation.",
-      productType: "Grocery price comparison app",
-      role: "Technical Lead, architecture and delivery",
-      impact: "More than 10,000 downloads across Quebec.",
-      overview:
-        "eezly compares grocery prices across Quebec supermarkets, so a shopping list can be built around what each store actually charges that week.",
-      responsibilities: [
-        "Lead architecture and delivery for the app alongside the other Byteimpulse platforms.",
-        "Own the backend and integration architecture behind barcode lookup and multi-store list optimisation.",
-      ],
-      approach: [
-        "Barcode lookup resolves a product to its listings across nearby stores.",
-        "List optimisation compares a full basket across stores rather than one item at a time.",
-      ],
-      technologies: ["Flutter", "Node.js"],
-      collaboration:
-        "Built with the Byteimpulse engineering team as one of the three platforms I lead.",
-      outcome: "The app has passed 10,000 downloads across Quebec.",
-      links: [
-        {
-          label: "Google Play",
-          href: "https://play.google.com/store/apps/details?id=com.eezly.groceryapp",
-        },
-        {
-          label: "App Store",
-          href: "https://apps.apple.com/ca/app/eezly-compare-grocery-prices/id6446444139",
-        },
-      ],
-      featured: true,
-      accent: "warm",
     },
     {
       slug: "bookjane",
