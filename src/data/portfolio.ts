@@ -184,13 +184,13 @@ export const portfolio = {
       description:
         "A grocery price comparison app used across Quebec, built on barcode lookup and multi-store list optimisation.",
       productType: "Grocery price comparison app",
-      role: "Technical Lead, led mobile engineering",
+      role: "Technical Lead, architecture and delivery",
       impact: "More than 10,000 downloads across Quebec.",
       overview:
         "eezly compares grocery prices across Quebec supermarkets, so a shopping list can be built around what each store actually charges that week.",
       responsibilities: [
-        "Led mobile engineering for the app alongside the other Byteimpulse platforms, owning Flutter development across iOS and Android.",
-        "Worked on barcode-based price lookup and multi-store list optimisation, the features driving the shopping list comparison.",
+        "Lead architecture and delivery for the app alongside the other Byteimpulse platforms.",
+        "Own the backend and integration architecture behind barcode lookup and multi-store list optimisation.",
       ],
       approach: [
         "Barcode lookup resolves a product to its listings across nearby stores.",
@@ -278,8 +278,9 @@ export const portfolio = {
         "REST APIs",
       ],
       collaboration:
-        "Delivered with a cross-functional team at Jovian Digital across product, design, and backend.",
-      outcome: "The platform scaled to more than 100,000 users worldwide.",
+        "Built as part of Jovian Digital's engineering team. I led development and architecture for the platform.",
+      outcome:
+        "UBQ scaled past 100,000 users worldwide, running on the quest and reward engine, tiered subscription system, and real-time messaging layer I built.",
       featured: true,
       accent: "ink",
     },
