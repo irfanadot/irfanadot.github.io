@@ -213,7 +213,7 @@ export default function Home() {
 
       <footer className="site-footer"><div className="container footer-inner">
         <p><strong>Irfan Akram</strong><span>Technical Lead</span><span>© {new Date().getFullYear()}</span></p>
-        <nav aria-label="Footer navigation"><a href={contact.linkedIn} target="_blank" rel="noopener noreferrer">LinkedIn</a><a href={contact.github} target="_blank" rel="noopener noreferrer">GitHub</a><a href={contact.stackOverflow} target="_blank" rel="noopener noreferrer">Stack Overflow</a><a href={`mailto:${contact.email}`}>Email</a><a href="#home">Back to top <ArrowUp size={15} aria-hidden="true" /></a></nav>
+        <nav aria-label="Footer navigation"><a href="#home">Back to top <ArrowUp size={15} aria-hidden="true" /></a></nav>
       </div></footer>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd).replace(/</g, "\\u003c") }} />
       <RevealController />
