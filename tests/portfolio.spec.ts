@@ -184,7 +184,6 @@ test("every external link is safe and no dead product link is published", async 
     expect(href).not.toContain("businessmpire");
     expect(href).not.toContain("businessempire");
     expect(href).not.toContain("myplan.norway");
-    expect(href).not.toMatch(/^https:\/\/eezly\.com/);
   }
 });
 

@@ -175,6 +175,17 @@ export const portfolio = {
         "Built with a distributed engineering team. I set the technical scope, guide implementation across backend, web, and mobile, and surface delivery risk early.",
       outcome:
         "Babel runs in production for Quebec condo management, with dues collection, maintenance records, and compliance reporting handled in one system.",
+      links: [
+        { label: "managewithbabel.ca", href: "https://www.managewithbabel.ca/" },
+        {
+          label: "App Store",
+          href: "https://apps.apple.com/ca/app/babel-condo-hoa-manager/id6499551382",
+        },
+        {
+          label: "Google Play",
+          href: "https://play.google.com/store/apps/details?id=ca.managewithbabel&hl=en",
+        },
+      ],
       featured: true,
       accent: "slate",
     },
@@ -201,6 +212,7 @@ export const portfolio = {
         "Built with the Byteimpulse engineering team as one of the three platforms I lead.",
       outcome: "The app has passed 10,000 downloads across Quebec.",
       links: [
+        { label: "eezly.com", href: "https://eezly.com/" },
         {
           label: "Google Play",
           href: "https://play.google.com/store/apps/details?id=com.eezly.groceryapp",
@@ -247,6 +259,7 @@ export const portfolio = {
         "Built with the Byteimpulse engineering team. I own architecture, code quality direction, and release readiness.",
       outcome:
         "Counter checkout time is down to 30 seconds, and billing keeps working through load shedding with FBR ready GST invoicing.",
+      links: [{ label: "srvqube.com", href: "https://srvqube.com/" }],
       featured: true,
       accent: "steel",
     },
@@ -304,7 +317,12 @@ export const portfolio = {
         "Worked as the Android engineer inside BookJane's existing product team, coordinating across time zones from Lahore.",
       outcome:
         "Shipped into a live platform used by healthcare, long-term care, hospital, and staffing organisations across Canada, the US, and the UK.",
-      links: [{ label: "bookjane.com", href: "https://bookjane.com" }],
+      links: [
+        {
+          label: "Google Play",
+          href: "https://play.google.com/store/apps/details?id=com.bookjane",
+        },
+      ],
       featured: true,
       accent: "slate",
     },
