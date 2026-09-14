@@ -117,7 +117,7 @@ export const portfolio = {
       skills: [
         "Node.js",
         "Express.js",
-        "MySQL",
+        "PostgreSQL",
         "REST APIs and webhooks",
       ],
     },
@@ -134,7 +134,7 @@ export const portfolio = {
     {
       title: "Delivery and Release",
       description: "Take agreed scope through testing, release, and production support.",
-      skills: ["GitHub Actions CI/CD", "Linux VPS deployment", "Vercel", "App Store and Play"],
+      skills: ["GitHub Actions CI/CD", "Vercel", "App Store and Play", "Agile and Scrum"],
     },
   ],
   caseStudies: [
@@ -156,7 +156,7 @@ export const portfolio = {
         "Own the backend and automation architecture, including LLM integration into product features and webhook and API automation across third-party services.",
       ],
       approach: [
-        "Node.js and Express.js services over MySQL, organised around Babel's core workflows: finance, property operations, and administration.",
+        "Node.js and Express.js services over PostgreSQL, organised around Babel's core workflows: finance, property operations, and administration.",
         "The application calls into the backend through defined REST APIs, so workflow status and dues calculations behave consistently regardless of client, across web, iOS, and Android.",
         "Stripe handles recurring dues and rent collection, integrated as a business workflow rather than a simple API call, feeding directly into resident account state and finance records.",
         "The AI assistant sits alongside the core backend as an integrated service, used for data analysis and for drafting notices and minutes, while core business and financial state stays deterministic in the backend rather than in the model.",
@@ -165,7 +165,7 @@ export const portfolio = {
       technologies: [
         "Node.js",
         "Express.js",
-        "MySQL",
+        "PostgreSQL",
         "REST APIs",
         "Stripe",
         "LLM integration",
@@ -197,7 +197,7 @@ export const portfolio = {
         "Built FBR-ready GST invoicing with QR code generation directly into the checkout flow.",
       ],
       approach: [
-        "Node.js and Express.js REST APIs over MySQL sit behind the counter app, invoicing, credit, and stock workflows.",
+        "Node.js and Express.js REST APIs over PostgreSQL sit behind the counter app, invoicing, credit, and stock workflows.",
         "Checkout keeps working through connectivity loss and load-shedding, then reconciles with the backend once service returns.",
         "Sales, credit, and returns are modelled as explicit, predictable application logic rather than ad hoc handling.",
         "Multi-branch stock transfers and cashier role management run through the same backend, keeping shop-wide state consistent.",
@@ -205,7 +205,7 @@ export const portfolio = {
       technologies: [
         "Node.js",
         "Express.js",
-        "MySQL",
+        "PostgreSQL",
         "REST APIs",
       ],
       collaboration:
@@ -339,7 +339,7 @@ export const portfolio = {
       achievements: [
         "Architected Babel's compliance and finance tooling, including automated Stripe dues collection, reserve fund tracking, and the AI assistant used for analysis and drafting.",
         "Designed SrvQube's offline-first billing architecture, which brought counter checkout time down to 30 seconds.",
-        "Own backend and AI automation architecture on Node.js, Express.js, MySQL, and n8n, including LLM integration into product features.",
+        "Own backend and AI automation architecture on Node.js, Express.js, PostgreSQL, and n8n, including LLM integration into product features.",
         "Own release engineering across the platforms, running backend services on Linux VPS infrastructure, deploying web apps on Vercel, and building CI/CD pipelines in GitHub Actions.",
       ],
       current: true,
@@ -375,7 +375,7 @@ export const portfolio = {
       period: "Mar 2022 to Jul 2023",
       location: "Pakistan",
       summary:
-        "Mobile and backend delivery across Flutter, Android, Node.js, Express.js, and MySQL.",
+        "Mobile and backend delivery across Flutter, Android, Node.js, Express.js, and PostgreSQL.",
       achievements: [
         "Delivered features spanning payments, maps, chat, subscriptions, and early AI integrations.",
         "Owned delivery from planning through implementation, testing, deployment, and post-release support.",
