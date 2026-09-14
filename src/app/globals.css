@@ -381,6 +381,8 @@ h3 { font-size: 1.55rem; font-weight: 650; }
 .contact-copy h2 { max-width: 720px; margin-bottom: 24px; font-size: 4.1rem; }
 .contact-copy .section-lede { max-width: 650px; color: rgba(255,255,255,.78); }
 .contact-actions { position: relative; z-index: 1; display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 10px; }
+/* Fixed so the "Copied" state doesn't shrink the button and reflow the row. */
+.copy-email-button { min-width: 160px; }
 .contact-location { display: flex; align-items: center; gap: 7px; margin: 22px 0 0; color: rgba(255,255,255,.68); font-size: .88rem; }
 .contact-location svg { color: #e7b18e; }
 .site-footer { border-top: 1px solid rgba(255,255,255,.12); background: var(--slate); color: white; }
@@ -542,9 +544,12 @@ html[data-reveal-ready="true"] [data-reveal].is-visible { transform: translateY(
   .hero-grid { gap: 52px; }
   .scroll-cue { bottom: 12px; }
   .portrait-shell { width: min(84vw,390px); }
-  .portrait-badge-years { right: -7%; }
-  .portrait-badge-lead { left: -7%; bottom: 23%; }
-  .portrait-badge-ai { right: -7%; bottom: 5%; }
+  /* Narrower offset than larger breakpoints: at these widths -7% left the
+     badges only ~9px from the viewport edge, tighter than the page's own
+     14px content padding and reading as cramped. */
+  .portrait-badge-years { right: -4%; }
+  .portrait-badge-lead { left: -4%; bottom: 23%; }
+  .portrait-badge-ai { right: -4%; bottom: 5%; }
   .ambient-one { right: -30%; width: 85%; }
   .expertise-grid { grid-template-columns: 1fr; }
   .expertise-section { padding: 74px 0; }

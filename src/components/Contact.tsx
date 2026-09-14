@@ -44,7 +44,7 @@ export function Contact() {
             <a className="button button-light" href={`mailto:${contact.email}`}>
               <Mail size={18} aria-hidden="true" /> Email Me
             </a>
-            <button className="button button-dark-glass" type="button" onClick={copyEmail}>
+            <button className="button button-dark-glass copy-email-button" type="button" onClick={copyEmail}>
               {copied ? <Check size={18} aria-hidden="true" /> : <Copy size={18} aria-hidden="true" />}
               {copied ? "Copied" : "Copy Email"}
             </button>
