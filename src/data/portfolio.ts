@@ -65,7 +65,7 @@ export const portfolio = {
   flags: {
     showExperience: true,
     portraitAvailable: true,
-    resumeAvailable: false,
+    resumeAvailable: true,
     analyticsEnabled: false,
   },
   navigation: [
@@ -184,13 +184,13 @@ export const portfolio = {
       description:
         "A grocery price comparison app used across Quebec, built on barcode lookup and multi-store list optimisation.",
       productType: "Grocery price comparison app",
-      role: "Technical Lead, architecture and delivery",
+      role: "Technical Lead, led mobile engineering",
       impact: "More than 10,000 downloads across Quebec.",
       overview:
         "eezly compares grocery prices across Quebec supermarkets, so a shopping list can be built around what each store actually charges that week.",
       responsibilities: [
-        "Lead architecture and delivery for the app alongside the other Byteimpulse platforms.",
-        "Own the backend and integration architecture behind barcode lookup and multi-store list optimisation.",
+        "Led mobile engineering for the app alongside the other Byteimpulse platforms, owning Flutter development across iOS and Android.",
+        "Worked on barcode-based price lookup and multi-store list optimisation, the features driving the shopping list comparison.",
       ],
       approach: [
         "Barcode lookup resolves a product to its listings across nearby stores.",
@@ -341,6 +341,7 @@ export const portfolio = {
         "Designed SrvQube's offline-first billing architecture, which brought counter checkout time down to 30 seconds.",
         "Own backend and AI automation architecture on Node.js, Express.js, PostgreSQL, and n8n, including LLM integration into product features.",
         "Own release engineering across the platforms, running backend services on Linux VPS infrastructure, deploying web apps on Vercel, and building CI/CD pipelines in GitHub Actions.",
+        "Translate business requirements into technical scopes and delivery plans, and own technical communication with stakeholders, surfacing risks early and keeping delivery aligned with product goals across a distributed team.",
       ],
       current: true,
     },
@@ -436,7 +437,7 @@ export const portfolio = {
   contact: {
     ...contact,
     availability:
-      "Open to full-time Technical Lead and Lead Software Engineer roles. Based in Lahore, available for Gulf relocation and international remote work.",
+      "Open to full-time Technical Lead, Senior Software Engineer, AI Automation Engineer, and Lead/Senior Mobile Engineer roles. Based in Lahore, available for Gulf relocation and international remote work.",
   },
   social: [
     { label: "LinkedIn", href: contact.linkedIn },
