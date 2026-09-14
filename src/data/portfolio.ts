@@ -65,7 +65,7 @@ export const portfolio = {
   flags: {
     showExperience: true,
     portraitAvailable: true,
-    resumeAvailable: false,
+    resumeAvailable: true,
     analyticsEnabled: false,
   },
   navigation: [
@@ -105,7 +105,7 @@ export const portfolio = {
       description: "Design systems that hold up as the product and the team grow.",
       skills: [
         "Clean Architecture",
-        "Modular design",
+        "SOLID principles",
         "Multi-tenant systems",
         "Offline-first sync",
         "API and integration design",
@@ -134,7 +134,7 @@ export const portfolio = {
     {
       title: "Delivery and Release",
       description: "Take agreed scope through testing, release, and production support.",
-      skills: ["GitHub Actions CI/CD", "Vercel", "App Store and Play", "Agile and Scrum"],
+      skills: ["GitHub Actions CI/CD", "Vercel", "Agile and Scrum"],
     },
   ],
   caseStudies: [
@@ -431,9 +431,8 @@ export const portfolio = {
   },
   languages: ["English, professional working", "Urdu, native"],
   resume: {
-    path: withBasePath("/Irfan-Akram-Resume.pdf"),
+    path: withBasePath("/Irfan-Resume.pdf"),
     lastUpdated: "",
-    // Set flags.resumeAvailable to true once a PDF matching the timeline above is in public/.
   },
   contact: {
     ...contact,
