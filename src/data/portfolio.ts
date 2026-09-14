@@ -117,7 +117,8 @@ export const portfolio = {
       skills: [
         "Node.js",
         "Express.js",
-        "PostgreSQL",
+        "SQL & NoSQL databases",
+        "GraphQL",
         "REST APIs and webhooks",
       ],
     },
@@ -134,7 +135,7 @@ export const portfolio = {
     {
       title: "Delivery and Release",
       description: "Take agreed scope through testing, release, and production support.",
-      skills: ["GitHub Actions CI/CD", "Vercel", "Agile and Scrum"],
+      skills: ["GitHub Actions CI/CD", "Deployments", "Agile and Scrum"],
     },
   ],
   caseStudies: [
