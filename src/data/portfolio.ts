@@ -65,7 +65,7 @@ export const portfolio = {
   flags: {
     showExperience: true,
     portraitAvailable: true,
-    resumeAvailable: true,
+    resumeAvailable: false,
     analyticsEnabled: false,
   },
   navigation: [

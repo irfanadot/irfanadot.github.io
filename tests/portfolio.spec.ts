@@ -436,8 +436,8 @@ test("portrait, resume state, and copy email behavior work", async ({ page }) =>
   });
   expect(framing.ratio).toBeLessThan(1);
 
-  // The resume PDF is available, so both resume actions render alongside LinkedIn.
-  await expect(page.locator('a[href="/Irfan-Akram-Resume.pdf"]').first()).toBeVisible();
+  // The resume PDF is intentionally unavailable, so no broken action is rendered.
+  await expect(page.locator('a[href="/Irfan-Akram-Resume.pdf"]')).toHaveCount(0);
   await expect(page.locator("#resume").getByRole("link", { name: /LinkedIn/i })).toBeVisible();
 
   await page.getByRole("button", { name: "Copy Email" }).click();
