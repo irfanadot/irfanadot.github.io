@@ -324,7 +324,6 @@ h3 { font-size: 1.55rem; font-weight: 650; }
 .work-flow::before { position: absolute; top: 14px; left: 12.5%; right: 12.5%; height: 1px; background: rgba(255,255,255,.2); content: ""; }
 .work-flow li { position: relative; min-height: 220px; padding: 26px 24px; border: 1px solid transparent; border-radius: 12px 28px 12px 28px; }
 .work-flow li::before { position: absolute; top: -25px; left: calc(50% - 5px); width: 10px; height: 10px; border: 2px solid var(--slate-strong); border-radius: 50%; background: #e5b18f; box-shadow: 0 0 0 5px rgba(255,255,255,.12); content: ""; }
-.work-flow li.is-glass { border-color: rgba(255,255,255,.16); background: rgba(255,255,255,.08); box-shadow: inset 0 1px 0 rgba(255,255,255,.14); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); transform: translateY(16px); }
 .work-flow li > span { display: block; margin-bottom: 32px; color: #e5b18f; font-size: .76rem; font-weight: 760; }
 .work-flow h3 { margin-bottom: 13px; }
 .work-flow p { margin: 0; color: rgba(255,255,255,.76); font-size: .9rem; }
@@ -382,6 +381,8 @@ h3 { font-size: 1.55rem; font-weight: 650; }
 .contact-copy h2 { max-width: 720px; margin-bottom: 24px; font-size: 4.1rem; }
 .contact-copy .section-lede { max-width: 650px; color: rgba(255,255,255,.78); }
 .contact-actions { position: relative; z-index: 1; display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 10px; }
+/* Fixed so the "Copied" state doesn't shrink the button and reflow the row. */
+.copy-email-button { min-width: 160px; }
 .contact-location { display: flex; align-items: center; gap: 7px; margin: 22px 0 0; color: rgba(255,255,255,.68); font-size: .88rem; }
 .contact-location svg { color: #e7b18e; }
 .site-footer { border-top: 1px solid rgba(255,255,255,.12); background: var(--slate); color: white; }
@@ -428,7 +429,7 @@ html[data-reveal-ready="true"] [data-reveal].is-visible { transform: translateY(
 /* More opaque materials keep every surface readable without backdrop-filter support. */
 @supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
   .header-inner, .button-glass, .portrait-sheet-glass, .portrait-badge, .expertise-card, .project-info, .mobile-nav, .document-sheet-mid, .document-sheet-front, .case-dialog { background: var(--glass-fallback); }
-  .button-dark-glass, .work-flow li.is-glass, .visual-glass-label { background: rgba(47,54,71,.96); }
+  .button-dark-glass, .visual-glass-label { background: rgba(47,54,71,.96); }
 }
 
 /* The hero is the whole first impression, so it has to clear the fold on a
@@ -518,7 +519,6 @@ html[data-reveal-ready="true"] [data-reveal].is-visible { transform: translateY(
   .work-flow { grid-template-columns: repeat(2,1fr); }
   .work-flow::before { display: none; }
   .work-flow li::before { display: none; }
-  .work-flow li.is-glass { transform: none; }
   .resume-layout { gap: 60px; }
   .contact-copy h2 { font-size: 3.4rem; }
   .timeline-entry { grid-template-columns: 1fr; gap: 14px; }
@@ -544,9 +544,12 @@ html[data-reveal-ready="true"] [data-reveal].is-visible { transform: translateY(
   .hero-grid { gap: 52px; }
   .scroll-cue { bottom: 12px; }
   .portrait-shell { width: min(84vw,390px); }
-  .portrait-badge-years { right: -7%; }
-  .portrait-badge-lead { left: -7%; bottom: 23%; }
-  .portrait-badge-ai { right: -7%; bottom: 5%; }
+  /* Narrower offset than larger breakpoints: at these widths -7% left the
+     badges only ~9px from the viewport edge, tighter than the page's own
+     14px content padding and reading as cramped. */
+  .portrait-badge-years { right: -4%; }
+  .portrait-badge-lead { left: -4%; bottom: 23%; }
+  .portrait-badge-ai { right: -4%; bottom: 5%; }
   .ambient-one { right: -30%; width: 85%; }
   .expertise-grid { grid-template-columns: 1fr; }
   .expertise-section { padding: 74px 0; }

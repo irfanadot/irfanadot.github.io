@@ -117,7 +117,7 @@ export const portfolio = {
       skills: [
         "Node.js",
         "Express.js",
-        "MySQL",
+        "PostgreSQL",
         "REST APIs and webhooks",
       ],
     },
@@ -134,7 +134,7 @@ export const portfolio = {
     {
       title: "Delivery and Release",
       description: "Take agreed scope through testing, release, and production support.",
-      skills: ["GitHub Actions CI/CD", "Linux VPS deployment", "Vercel", "App Store and Play"],
+      skills: ["GitHub Actions CI/CD", "Vercel", "App Store and Play", "Agile and Scrum"],
     },
   ],
   caseStudies: [
@@ -156,7 +156,7 @@ export const portfolio = {
         "Own the backend and automation architecture, including LLM integration into product features and webhook and API automation across third-party services.",
       ],
       approach: [
-        "Node.js and Express.js services over MySQL, organised around Babel's core workflows: finance, property operations, and administration.",
+        "Node.js and Express.js services over PostgreSQL, organised around Babel's core workflows: finance, property operations, and administration.",
         "The application calls into the backend through defined REST APIs, so workflow status and dues calculations behave consistently regardless of client, across web, iOS, and Android.",
         "Stripe handles recurring dues and rent collection, integrated as a business workflow rather than a simple API call, feeding directly into resident account state and finance records.",
         "The AI assistant sits alongside the core backend as an integrated service, used for data analysis and for drafting notices and minutes, while core business and financial state stays deterministic in the backend rather than in the model.",
@@ -165,7 +165,7 @@ export const portfolio = {
       technologies: [
         "Node.js",
         "Express.js",
-        "MySQL",
+        "PostgreSQL",
         "REST APIs",
         "Stripe",
         "LLM integration",
@@ -177,6 +177,41 @@ export const portfolio = {
         "Babel runs in production for Quebec condo management, with dues collection, maintenance records, and compliance reporting handled in one system.",
       featured: true,
       accent: "slate",
+    },
+    {
+      slug: "eezly",
+      name: "eezly",
+      description:
+        "A grocery price comparison app used across Quebec, built on barcode lookup and multi-store list optimisation.",
+      productType: "Grocery price comparison app",
+      role: "Technical Lead, architecture and delivery",
+      impact: "More than 10,000 downloads across Quebec.",
+      overview:
+        "eezly compares grocery prices across Quebec supermarkets, so a shopping list can be built around what each store actually charges that week.",
+      responsibilities: [
+        "Lead architecture and delivery for the app alongside the other Byteimpulse platforms.",
+        "Own the backend and integration architecture behind barcode lookup and multi-store list optimisation.",
+      ],
+      approach: [
+        "Barcode lookup resolves a product to its listings across nearby stores.",
+        "List optimisation compares a full basket across stores rather than one item at a time.",
+      ],
+      technologies: ["Flutter", "Node.js"],
+      collaboration:
+        "Built with the Byteimpulse engineering team as one of the three platforms I lead.",
+      outcome: "The app has passed 10,000 downloads across Quebec.",
+      links: [
+        {
+          label: "Google Play",
+          href: "https://play.google.com/store/apps/details?id=com.eezly.groceryapp",
+        },
+        {
+          label: "App Store",
+          href: "https://apps.apple.com/ca/app/eezly-compare-grocery-prices/id6446444139",
+        },
+      ],
+      featured: true,
+      accent: "warm",
     },
     {
       slug: "srvqube",
@@ -197,7 +232,7 @@ export const portfolio = {
         "Built FBR-ready GST invoicing with QR code generation directly into the checkout flow.",
       ],
       approach: [
-        "Node.js and Express.js REST APIs over MySQL sit behind the counter app, invoicing, credit, and stock workflows.",
+        "Node.js and Express.js REST APIs over PostgreSQL sit behind the counter app, invoicing, credit, and stock workflows.",
         "Checkout keeps working through connectivity loss and load-shedding, then reconciles with the backend once service returns.",
         "Sales, credit, and returns are modelled as explicit, predictable application logic rather than ad hoc handling.",
         "Multi-branch stock transfers and cashier role management run through the same backend, keeping shop-wide state consistent.",
@@ -205,7 +240,7 @@ export const portfolio = {
       technologies: [
         "Node.js",
         "Express.js",
-        "MySQL",
+        "PostgreSQL",
         "REST APIs",
       ],
       collaboration:
@@ -243,45 +278,11 @@ export const portfolio = {
         "REST APIs",
       ],
       collaboration:
-        "Delivered with a cross-functional team at Jovian Digital across product, design, and backend.",
-      outcome: "The platform scaled to more than 100,000 users worldwide.",
+        "Built as part of Jovian Digital's engineering team. I led development and architecture for the platform.",
+      outcome:
+        "UBQ scaled past 100,000 users worldwide, running on the quest and reward engine, tiered subscription system, and real-time messaging layer I built.",
       featured: true,
       accent: "ink",
-    },
-    {
-      slug: "eezly",
-      name: "eezly",
-      description:
-        "A grocery price comparison app used across Quebec, built on barcode lookup and multi-store list optimisation.",
-      productType: "Grocery price comparison app",
-      role: "Technical Lead, architecture and delivery",
-      impact: "More than 10,000 downloads across Quebec.",
-      overview:
-        "eezly compares grocery prices across Quebec supermarkets, so a shopping list can be built around what each store actually charges that week.",
-      responsibilities: [
-        "Lead architecture and delivery for the app alongside the other Byteimpulse platforms.",
-        "Own the backend and integration architecture behind barcode lookup and multi-store list optimisation.",
-      ],
-      approach: [
-        "Barcode lookup resolves a product to its listings across nearby stores.",
-        "List optimisation compares a full basket across stores rather than one item at a time.",
-      ],
-      technologies: ["Flutter", "Node.js"],
-      collaboration:
-        "Built with the Byteimpulse engineering team as one of the three platforms I lead.",
-      outcome: "The app has passed 10,000 downloads across Quebec.",
-      links: [
-        {
-          label: "Google Play",
-          href: "https://play.google.com/store/apps/details?id=com.eezly.groceryapp",
-        },
-        {
-          label: "App Store",
-          href: "https://apps.apple.com/ca/app/eezly-compare-grocery-prices/id6446444139",
-        },
-      ],
-      featured: true,
-      accent: "warm",
     },
     {
       slug: "bookjane",
@@ -339,8 +340,9 @@ export const portfolio = {
       achievements: [
         "Architected Babel's compliance and finance tooling, including automated Stripe dues collection, reserve fund tracking, and the AI assistant used for analysis and drafting.",
         "Designed SrvQube's offline-first billing architecture, which brought counter checkout time down to 30 seconds.",
-        "Own backend and AI automation architecture on Node.js, Express.js, MySQL, and n8n, including LLM integration into product features.",
+        "Own backend and AI automation architecture on Node.js, Express.js, PostgreSQL, and n8n, including LLM integration into product features.",
         "Own release engineering across the platforms, running backend services on Linux VPS infrastructure, deploying web apps on Vercel, and building CI/CD pipelines in GitHub Actions.",
+        "Translate business requirements into technical scopes and delivery plans, and own technical communication with stakeholders, surfacing risks early and keeping delivery aligned with product goals across a distributed team.",
       ],
       current: true,
     },
@@ -375,7 +377,7 @@ export const portfolio = {
       period: "Mar 2022 to Jul 2023",
       location: "Pakistan",
       summary:
-        "Mobile and backend delivery across Flutter, Android, Node.js, Express.js, and MySQL.",
+        "Mobile and backend delivery across Flutter, Android, Node.js, Express.js, and PostgreSQL.",
       achievements: [
         "Delivered features spanning payments, maps, chat, subscriptions, and early AI integrations.",
         "Owned delivery from planning through implementation, testing, deployment, and post-release support.",
@@ -436,7 +438,7 @@ export const portfolio = {
   contact: {
     ...contact,
     availability:
-      "Open to full-time Technical Lead and Lead Software Engineer roles. Based in Lahore, available for Gulf relocation and international remote work.",
+      "Open to full-time Technical Lead, Senior Software Engineer, AI Automation Engineer, and Lead/Senior Mobile Engineer roles. Based in Lahore, open to relocation.",
   },
   social: [
     { label: "LinkedIn", href: contact.linkedIn },

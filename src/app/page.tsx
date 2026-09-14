@@ -47,7 +47,7 @@ export default function Home() {
       "REST APIs",
       "Node.js",
       "Express.js",
-      "MySQL",
+      "PostgreSQL",
       "LLM integration",
       "AI automation",
       "n8n",
@@ -87,7 +87,6 @@ export default function Home() {
                 <div className="social-links" aria-label="Social profiles">
                   <a href={contact.linkedIn} target="_blank" rel="noopener noreferrer">LinkedIn <ArrowUpRight size={16} aria-hidden="true" /></a>
                   <a href={contact.github} target="_blank" rel="noopener noreferrer">GitHub <ArrowUpRight size={16} aria-hidden="true" /></a>
-                  <a href={contact.stackOverflow} target="_blank" rel="noopener noreferrer">Stack Overflow <ArrowUpRight size={16} aria-hidden="true" /></a>
                 </div>
               </div>
             </div>
@@ -122,7 +121,7 @@ export default function Home() {
             <div className="section-heading" data-reveal><p className="eyebrow">How I Work</p><h2 id="work-title">From ambiguity to production.</h2></div>
             <ol className="work-flow" data-reveal>
               {portfolio.workMethod.map((step, index) => (
-                <li key={step.title} className={index % 2 ? "is-glass" : ""}>
+                <li key={step.title}>
                   <span aria-hidden="true">{String(index + 1).padStart(2, "0")}</span><div><h3>{step.title}</h3><p>{step.text}</p></div>
                 </li>
               ))}
@@ -134,7 +133,7 @@ export default function Home() {
           <section id="experience" className="section experience-section" aria-labelledby="experience-title">
             <div className="container">
               <div className="section-heading split-heading" data-reveal>
-                <div><p className="eyebrow">Experience</p><h2 id="experience-title">From Android developer to Technical Lead.</h2></div>
+                <div><p className="eyebrow">Experience</p><h2 id="experience-title">From individual contributor to Technical Lead.</h2></div>
                 <p className="section-lede">Seven years of production delivery, with the hands-on engineering never leaving the job description.</p>
               </div>
               <ol className="timeline">
