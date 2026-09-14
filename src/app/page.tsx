@@ -87,7 +87,6 @@ export default function Home() {
                 <div className="social-links" aria-label="Social profiles">
                   <a href={contact.linkedIn} target="_blank" rel="noopener noreferrer">LinkedIn <ArrowUpRight size={16} aria-hidden="true" /></a>
                   <a href={contact.github} target="_blank" rel="noopener noreferrer">GitHub <ArrowUpRight size={16} aria-hidden="true" /></a>
-                  <a href={contact.stackOverflow} target="_blank" rel="noopener noreferrer">Stack Overflow <ArrowUpRight size={16} aria-hidden="true" /></a>
                 </div>
               </div>
             </div>
@@ -122,7 +121,7 @@ export default function Home() {
             <div className="section-heading" data-reveal><p className="eyebrow">How I Work</p><h2 id="work-title">From ambiguity to production.</h2></div>
             <ol className="work-flow" data-reveal>
               {portfolio.workMethod.map((step, index) => (
-                <li key={step.title} className={index % 2 ? "is-glass" : ""}>
+                <li key={step.title}>
                   <span aria-hidden="true">{String(index + 1).padStart(2, "0")}</span><div><h3>{step.title}</h3><p>{step.text}</p></div>
                 </li>
               ))}

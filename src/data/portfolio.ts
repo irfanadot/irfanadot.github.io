@@ -438,7 +438,7 @@ export const portfolio = {
   contact: {
     ...contact,
     availability:
-      "Open to full-time Technical Lead, Senior Software Engineer, AI Automation Engineer, and Lead/Senior Mobile Engineer roles. Based in Lahore, available for Gulf relocation and international remote work.",
+      "Open to full-time Technical Lead, Senior Software Engineer, AI Automation Engineer, and Lead/Senior Mobile Engineer roles. Based in Lahore, open to relocation.",
   },
   social: [
     { label: "LinkedIn", href: contact.linkedIn },
